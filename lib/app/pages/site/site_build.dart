@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:site_gao/app/pages/home/home_page.dart';
-import 'package:site_gao/app/pages/home/widgets/cabecalho/header.dart';
-import 'package:site_gao/app/pages/home/widgets/cabecalho/sub_header.dart';
+import 'package:site_gao/app/pages/home/widgets/header/header.dart';
+import 'package:site_gao/app/pages/home/widgets/header/sub_header.dart';
 import 'package:site_gao/app/pages/site/widgets/scroll_down_button.dart';
 
 import 'site_controller.dart';

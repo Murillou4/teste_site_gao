@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:site_gao/app/pages/home/widgets/cabecalho/menu_text_item.dart';
+import 'package:site_gao/app/pages/home/widgets/header/menu_text_item.dart';
 
 class SubHeader extends StatelessWidget {
   const SubHeader({super.key});
