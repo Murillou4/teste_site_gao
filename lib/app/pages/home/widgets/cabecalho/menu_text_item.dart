@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/cores.dart';
+import '../../../../core/app_colors.dart';
 
 class MenuTextItem extends StatelessWidget {
   const MenuTextItem({
@@ -17,7 +17,7 @@ class MenuTextItem extends StatelessWidget {
       child: Text(
         texto,
         style: TextStyle(
-          color: Cores.textBackgroundColor,
+          color: AppColors.textBackgroundColor,
           fontSize: 20,
           fontWeight: FontWeight.bold,
         ),

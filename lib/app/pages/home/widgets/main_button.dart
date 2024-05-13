@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/cores.dart';
+import '../../../core/app_colors.dart';
 
-class BotaoPrincipal extends StatelessWidget {
-  const BotaoPrincipal({
+class MainButton extends StatelessWidget {
+  const MainButton({
     super.key,
     required this.texto,
     required this.onTap,
@@ -18,14 +18,14 @@ class BotaoPrincipal extends StatelessWidget {
         width: 143,
         height: 46,
         decoration: BoxDecoration(
-          color: Cores.buttonColor,
+          color: AppColors.buttonColor,
           borderRadius: BorderRadius.circular(15),
         ),
         child: Center(
           child: Text(
             texto,
             style: TextStyle(
-              color: Cores.textButtonColor,
+              color: AppColors.textButtonColor,
               fontSize: 14,
               fontWeight: FontWeight.bold,
             ),

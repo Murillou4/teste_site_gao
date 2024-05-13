@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Cores {
+class AppColors {
   static Color buttonColor = const Color(0xFF004F51);
   static Color textButtonColor = Colors.white;
   static Color backgroundColor = const Color(0xFF231F20);

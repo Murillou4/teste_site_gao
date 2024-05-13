@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:site_gao/app/pages/site/site_controller.dart';
 
-import '../../../core/cores.dart';
+import '../../../core/app_colors.dart';
 
-class GoDownButton extends StatelessWidget {
-  const GoDownButton({super.key});
+class ScrollDownButton extends StatelessWidget {
+  const ScrollDownButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,13 +22,13 @@ class GoDownButton extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(50),
           border: Border.all(
-            color: Cores.textButtonColor,
+            color: AppColors.textButtonColor,
             width: 1,
           ),
         ),
         child: Icon(
           Icons.keyboard_arrow_down_sharp,
-          color: Cores.textButtonColor,
+          color: AppColors.textButtonColor,
           weight: 1,
         ),
       ),

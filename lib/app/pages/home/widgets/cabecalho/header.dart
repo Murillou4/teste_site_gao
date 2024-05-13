@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:site_gao/app/pages/home/widgets/cabecalho/menu_text_item.dart';
 
-import '../../../../core/cores.dart';
+import '../../../../core/app_colors.dart';
+import 'menu_text_item.dart';
 
-class Cabecalho extends StatelessWidget {
-  const Cabecalho({super.key});
+class Header extends StatelessWidget {
+  const Header({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +48,7 @@ class Cabecalho extends StatelessWidget {
             width: MediaQuery.of(context).size.width * 0.8,
             height: 2,
             decoration: BoxDecoration(
-              color: Cores.textBackgroundColor,
+              color: AppColors.textBackgroundColor,
               borderRadius: BorderRadius.circular(15),
             ),
           ),

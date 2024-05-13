@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:site_gao/app/pages/home/home_page.dart';
 import 'package:site_gao/app/pages/site/site_build.dart';
 
 class MyApp extends StatelessWidget {

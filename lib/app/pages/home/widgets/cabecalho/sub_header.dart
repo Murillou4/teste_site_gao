@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:site_gao/app/pages/home/widgets/cabecalho/menu_text_item.dart';
 
-class SegundoCabecalho extends StatelessWidget {
-  const SegundoCabecalho({super.key});
+class SubHeader extends StatelessWidget {
+  const SubHeader({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: MediaQuery.of(context).size.width,
       height: 110,
       child: Row(

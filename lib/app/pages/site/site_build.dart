@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:site_gao/app/pages/home/home_page.dart';
-import 'package:site_gao/app/pages/home/widgets/cabecalho/cabecalho.dart';
-import 'package:site_gao/app/pages/home/widgets/cabecalho/segundo_cabecalho.dart';
+import 'package:site_gao/app/pages/home/widgets/cabecalho/header.dart';
+import 'package:site_gao/app/pages/home/widgets/cabecalho/sub_header.dart';
+import 'package:site_gao/app/pages/site/widgets/scroll_down_button.dart';
 
 import 'site_controller.dart';
-import 'widgets/go_down_button.dart';
 
 class SiteBuild extends StatefulWidget {
   const SiteBuild({super.key});
@@ -20,7 +19,8 @@ class _SiteBuildState extends State<SiteBuild> {
     SiteController.instance.scrollController.addListener(() {
       setState(() {
         //verificar se está no topo
-        if (SiteController.instance.scrollController.offset > Offset(0, 0).dy) {
+        if (SiteController.instance.scrollController.offset >
+            const Offset(0, 0).dy) {
           SiteController.instance.changeIsScrolling(true);
         } else {
           SiteController.instance.changeIsScrolling(false);
@@ -54,8 +54,8 @@ class _SiteBuildState extends State<SiteBuild> {
                 valueListenable: SiteController.instance.isScrolling,
                 builder: (context, value, child) {
                   return AnimatedCrossFade(
-                    firstChild: const Cabecalho(),
-                    secondChild: const SegundoCabecalho(),
+                    firstChild: const Header(),
+                    secondChild: const SubHeader(),
                     crossFadeState: value
                         ? CrossFadeState.showSecond
                         : CrossFadeState.showFirst,
@@ -63,7 +63,7 @@ class _SiteBuildState extends State<SiteBuild> {
                   );
                 }),
           ),
-          const GoDownButton(),
+          const ScrollDownButton(),
         ],
       ),
     );
